@@ -13,39 +13,24 @@ one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,
 
 ## Proof
 
-Considering two graphs, A and B, with the same number of nodes and are completely connected:
+**Considering two graphs, A and B, with the same number of nodes and are completely connected:**
 
 Graph A: $G_1 = (V_1, E_1)$
 
-Vertices: $V_1 = {A, B, C}$
-
-Edges: $E_1 = {(A, B), (A, C), (B, C)}$
-
 Graph B: $G_2 = (V_2, E_2)$
 
-Vertices: $V_2 = {X, Y, Z}$
+**Bijection function $f: V_1 \rightarrow V_2$, makes Graph A isomorphic to Graph B.**
 
-Edges: $E_2 = {(X, Y), (X, Z), (Y, Z)}$
+**Foward direction:**
 
-Both graphs have the same number of nodes, which is three.
+For any edge $(u, v) \in E_1, \exists (f(u), f(v)) \in E_2$
 
-Bijection function $f: V_1 \rightarrow V_2$ that makes Graph A isomorphic to Graph B:
+For each edge $(u, v) \in E_1$, we have $(f(u), f(v)) \in E_2$ due to the bijection $f$. This ensures that the forward direction of the isomorphism condition is satisfied.
 
-$f(A) = X$
+**Reverse direction:**
 
-$f(B) = Y$
+For any edge $(x, y) \in E_2, \exists (f^{-1}(x), f^{-1}(y)) \in E_1$, where $f^{-1}$ is the inverse of the bijection $f$
 
-$f(C) = Z$
+For each edge $(x, y) \in E_2$, we have a corresponding edge $(f^{-1}(x), f^{-1}(y))$ in $E_1$ because of the inverse bijection $f^{-1}$. This confirms that the reverse direction of the isomorphism condition is met.
 
-It is evident that this function is a one-to-one and onto (bijection) function, as it maps all nodes in Graph A to all nodes in Graph B in a one-to-one and onto manner.
-
-For any edge $(u, v) \in E_1$, there is a corresponding edge $(f(u), f(v)) \in E_2$:
-
-For edge (A, B) in Graph A, we have (X, Y) in Graph B.
-
-For edge (A, C) in Graph A, we have (X, Z) in Graph B.
-
-For edge (B, C) in Graph A, we have (Y, Z) in Graph B.
-
-Thus, the condition for isomorphism is met: for any edge $(u, v) \in E_1$, we have $(f(u), f(v)) \in E_2$.
 
