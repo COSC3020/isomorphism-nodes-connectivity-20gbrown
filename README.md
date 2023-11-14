@@ -19,7 +19,17 @@ Graph A: $G_1 = (V_1, E_1)$
 
 Graph B: $G_2 = (V_2, E_2)$
 
-**Bijection function $f: V_1 \rightarrow V_2$, makes Graph A isomorphic to Graph B.**
+**Bijection function:**
+
+$f: A ↔ B$
+
+V<sub>A<sub>1</sub></sub> ↔ V<sub>B<sub>1</sub></sub>
+
+V<sub>A<sub>2</sub></sub> ↔ V<sub>B<sub>2</sub></sub>
+
+. . .
+
+V<sub>A<sub>n</sub></sub> ↔ V<sub>B<sub>n</sub></sub>
 
 **Foward direction:**
 
@@ -32,5 +42,7 @@ For each edge $(u, v) \in E_1$, we have $(f(u), f(v)) \in E_2$ due to the biject
 For any edge $(x, y) \in E_2, \exists (f^{-1}(x), f^{-1}(y)) \in E_1$, where $f^{-1}$ is the inverse of the bijection $f$
 
 For each edge $(x, y) \in E_2$, we have a corresponding edge $(f^{-1}(x), f^{-1}(y))$ in $E_1$ because of the inverse bijection $f^{-1}$. This confirms that the reverse direction of the isomorphism condition is met.
+
+
 
 
